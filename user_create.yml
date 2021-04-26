@@ -1,0 +1,14 @@
+---
+- hosts:webservers
+  become:true
+  tasks:
+  - name: creating a functional user
+    user:
+     name: tomcat
+     passwd: 123345
+     groups: sudo
+     state: present
+
+   
+   
+
