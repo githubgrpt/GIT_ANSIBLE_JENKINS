@@ -3,11 +3,12 @@
   become: true
   tasks:
   - name: creating a functional user
-    user:
+    ansible.builtin.user:
      name: tomcat
      passwd: 123345
      groups: sudo
      state: present
+    
 
    
    
