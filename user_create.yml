@@ -4,10 +4,10 @@
   tasks:
   - name: creating a functional user
     ansible.builtin.user:
-     name: tomcat
-     passwd: 123345
-     groups: sudo
-     state: present
+      name: tomcat
+      passwd: 123345
+      groups: sudo
+      state: present
     
 
    
